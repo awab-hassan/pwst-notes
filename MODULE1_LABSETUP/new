@@ -1,0 +1,17 @@
+Setup of lab on both labs (Kali Linux, Ubuntu Server)
+
+git clone https://github.com/The-Taggart-Institute/pwst-resources
+
+go to kali-setup folder and run: sudo sh script.sh
+
+mkdir ~/Scripts
+
+cd ~/Scripts
+
+git clone https://github.com/mttaggart/shell-setup
+
+go to the folder and run: sudo sh script.sh
+
+git clone https://github.com/danielmiessler/SecLists
+
+this repository contains all the wordlists for you to go!
