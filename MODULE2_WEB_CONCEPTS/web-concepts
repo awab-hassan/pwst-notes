@@ -1,0 +1,9 @@
+---- Web Application Concepts ----
+
+2-1: Servers and Clients
+
+Server is basically a machine or a software that provides information to clients, we make HTTP/HTTPS request using web browsers but also wget, curl etc. So we as a client sends a requests to server and then server serves the information/data.
+
+2-2: Lab - Nginx and Server Logs
+
+Basically analysing the logs, like we can make requests using curl, nc or a web browser and on the server side logs the server receives requests from us (clients).
