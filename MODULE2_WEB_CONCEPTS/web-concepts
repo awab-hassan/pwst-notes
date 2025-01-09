@@ -17,3 +17,52 @@ If you are posting some infomration or inputing some data then you are using POS
 All the requests have headers, also metadata about request, used for authentication, client identification etc. Some requests have a body like form submission or sending data via API.  
 
 Every response has a Response code, 200’s are success, 300’s are redirects, 400’s are Failed access. 500’s are erros. Responses can have a body HTML, JSON or even binary data. Ps Modifying User-agent can be a legitmate attack vector.
+
+2-4: The Web
+
+HTML represents the content, javascript controls the logic and CSS styles the content. 
+
+2-5: HTML
+
+The structure of HTML is defined between tags, starting with HTML tag, then HEAD tag and then BODY tag etc. IDS are defined in CSS with #. Using view source we can see full HTML code RAW. 
+
+2-6: CSS
+
+CSS is used to style web content. These CSS sheets are reffered in HEAD tag.
+
+2-7: JavaScript
+
+Javascript handles the logic of application, CSS + HTML + JS go together. 
+
+2-9: ZAP Intro
+
+Setup your vivaldi browser and add these extensions:
+
+- Hack tools
+- Proxy switchy omega
+- Wappalyzer
+
+Setup your ZAP and add these add-ons:
+
+- Directory lists (2x)
+- Fuzz (3x)
+- SAML support
+- JWT support
+- Advanced SQL Injection
+- Python Scripting
+- Access control settings
+- Community scripts
+- JSON View
+- View State
+
+To remove annoying tabs number, go to panel → panel preferences → items → windows button → edit → show button labels ON and Windows grouping never. 
+
+First turn on OmegaSwitchyProxy ZAP and then move go to ZAP → options → certificates → save → import it in your browser. 
+
+In ZAP, exclude extra contexts from options → exclusions → add contexts and ok. 
+
+2-10: Lab - ZAP Enumeration
+
+- Start with adding the site in context, then run spider to view hidden pages. This is called spidering.
+- Inspect different pages because there might be some comments left-over with sensitive information.
+- Highlight the area you want to fuzz (to view pages that aren’t linked, but available on site or hidden) select payload, we can use file fuzzers *zap addon, or actual files.* Select wordlist and start the fuzzer. Click the code option and you can check hidden pages.
