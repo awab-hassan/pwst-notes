@@ -7,3 +7,13 @@ Server is basically a machine or a software that provides information to clients
 2-2: Lab - Nginx and Server Logs
 
 Basically analysing the logs, like we can make requests using curl, nc or a web browser and on the server side logs the server receives requests from us (clients).
+
+2-3: HTTP
+
+The protocol that defines how web traffic is structrued. We as user make http requests to URL with a method, for example generally we are working with get method because its basically when you request [somewebsite.com](http://somewebsite.com) you are basically using a GET method.
+
+If you are posting some infomration or inputing some data then you are using POST method. DELETE method when you want to delete something, HEAD and OPTIONS are more of a metadata headers.
+
+All the requests have headers, also metadata about request, used for authentication, client identification etc. Some requests have a body like form submission or sending data via API.  
+
+Every response has a Response code, 200’s are success, 300’s are redirects, 400’s are Failed access. 500’s are erros. Responses can have a body HTML, JSON or even binary data. Ps Modifying User-agent can be a legitmate attack vector.
